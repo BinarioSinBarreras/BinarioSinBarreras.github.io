@@ -1,0 +1,179 @@
+<!-- sobre-nosotros.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BinarioSinBarreras - Sobre Nosotros</title>
+    <link rel="stylesheet" href="https://cdn.tailwindcss.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-image: url('fondo.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        header {
+            background-color: #af363c;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        header nav ul li {
+            margin-right: 20px;
+        }
+
+        header nav a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        header nav a:hover {
+            color: #ccc;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        section {
+            background-color: #fff;
+            padding: 2rem;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #792a34;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+            clear: both;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        footer ul li {
+            margin-right: 20px;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        footer a:hover {
+            color: #ccc;
+        }
+
+        .modo-oscuro {
+            background-color: #333;
+            color: #fff;
+        }
+
+        .modo-oscuro header {
+            background-color: #444;
+        }
+
+        .modo-oscuro footer {
+            background-color: #444;
+        }
+    </style>
+</head>
+<body>
+    <!-- Encabezado -->
+    <header class="bg-blue-500 text-white p-4">
+        <nav class="container mx-auto flex justify-between">
+            <img src="logo.png" alt="Logo de BinarioSinBarreras" class="w-20 h-20">
+            <ul class="flex items-center">
+                <li class="mr-4"><a href="inicio.html" class="text-lg">Inicio</a></li>
+                <li class="mr-4"><a href="noticias.html" class="text-lg">Noticias</a></li>
+                <li class="mr-4"><a href="recursos-educativos.html" class="text-lg">Recursos Educativos</a></li>
+                <li class="mr-4"><a href="quienes-somos.html" class="text-lg">Quienes Somos</a></li>
+                <li><a href="contactanos.html" class="text-lg">Contactanos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección principal -->
+    <main class="container mx-auto p-4">
+        <section id="sobre-nosotros" class="bg-white p-4 shadow-md">
+            <h1 class="text-3xl font-bold mb-4">Sobre Nosotros</h1>
+            <p>Somos un equipo de personas apasionadas por la tecnología y la educación. Nuestro objetivo es proporcionar recursos y herramientas para que los estudiantes y profesionales puedan aprender y mejorar sus habilidades en programación y tecnología.</p>
+            <h2 class="text-2xl font-bold mb-2">Nuestra Misión</h2>
+            <p>Nuestra misión es proporcionar una plataforma de aprendizaje en línea que sea accesible y asequible para todos. Queremos ayudar a los estudiantes y profesionales a desarrollar habilidades en programación y tecnología que les permitan alcanzar sus objetivos y mejorar su calidad de vida.</p>
+            <h2 class="text-2xl font-bold mb-2">Nuestros Valores</h2>
+            <ul>
+                <li>La educación es un derecho fundamental para todos.</li>
+                <li>La tecnología es una herramienta poderosa para mejorar la calidad de vida.</li>
+                <li>La colaboración y el trabajo en equipo son fundamentales para alcanzar objetivos.</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="bg-blue-500 text-white p-4">
+        <div class="container mx-auto flex justify-between">
+            <p>&copy; 2025 BinarioSinBarreras</p>
+            <ul class="flex items-center">
+                <li class="mr-4"><a href="#" class="text-lg">Facebook</a></li>
+                <li class="mr-4"><a href="#" class="text-lg">Twitter</a></li>
+                <li><a href="#" class="text-lg">Instagram</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        // Función para cambiar el modo de oscuro
+        function cambiarModoOscuro() {
+            document.body.classList.toggle('modo-oscuro');
+        }
+
+        // Agregar evento al botón de modo oscuro
+        document.getElementById('modo-oscuro').addEventListener('click', cambiarModoOscuro);
+    </script>
+</body>
+</html>
